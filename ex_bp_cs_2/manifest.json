@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Exemplo 5 - Mudando cor de fundo da pagina que você quiser",
+  "version": "1.0",
+  "description": "Usando content scripts via background pages",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs", "http://*/*", "http://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Mudar cor da página",
+    "default_popup": "popup.html"
+  }
+}

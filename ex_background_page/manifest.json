@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Exemplo 2 - Buscando CEP no Postmon",
+  "version": "1.0",
+  "description": "Usando background pages para buscar coisas no Postmon",
+  "background": {
+    "scripts": ["script.js"]
+  },
+  "permissions": ["http://api.postmon.com.br/*"],
+  "browser_action": {
+    "default_title": "Consultar CEP",
+    "default_popup": "popup.html"
+  }
+}

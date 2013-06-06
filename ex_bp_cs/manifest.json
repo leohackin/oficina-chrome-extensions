@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Exemplo 4 - Mudando cor de fundo da pagina quando clicar no icone da extension",
+  "version": "1.0",
+  "description": "Usando content scripts via background pages",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "tabs", "http://*/*", "http://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Mudar cor da página"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Exemplo 3 - Mudando cor de fundo da pagina",
+  "version": "1.0",
+  "description": "Usando content scripts",
+  "content_scripts": [{
+    "matches": ["https://www.google.com.br/*"],
+    "js": ["script.js"],
+    "css": ["cor.css"]
+  }],
+  "permissions": [
+    "tabs", "https://www.google.com.br/*"
+  ]
+}
